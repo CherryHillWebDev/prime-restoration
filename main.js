@@ -136,23 +136,6 @@
     });
   });
 
-  /* ---------- estimate form: client-side only (see NOTE FOR DEV in HTML) ---------- */
-  var form = document.getElementById('estimate-form');
-  var successEl = document.getElementById('form-success');
-  if (form){
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      if (!form.checkValidity()){
-        form.reportValidity();
-        return;
-      }
-      // TODO: replace this block with a real submission (fetch to your
-      // form handler / backend). Currently just shows a success state.
-      successEl.classList.add('is-visible');
-      form.reset();
-    });
-  }
-
   /* ---------- scroll-reveal (respects prefers-reduced-motion) ---------- */
   var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!prefersReduced && 'IntersectionObserver' in window){
