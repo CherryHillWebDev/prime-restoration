@@ -129,9 +129,10 @@
 <header class="site-header" id="site-header">
   <div class="container header-inner">
     <a href="index.html" class="brand" aria-label="Prime Restoration home">
-      <img src="images/prime-restoration-logo.png" alt="Prime Restoration logo" width="46" height="46">
+      <img src="images/prime-restoration-logo.png" alt="Prime Restoration logo" width="58" height="58">
       <span class="brand-text">
         <span class="brand-name">PRIME RESTORATION</span>
+        <span class="brand-subname">and Remodeling</span>
         <span class="brand-tag">We restore more than property. We restore peace of mind.</span>
       </span>
     </a>
@@ -157,9 +158,14 @@
     </nav>
 
     <div class="header-actions">
-      <a class="header-phone" href="tel:+12159714523">
-        <svg class="icon"><use href="#i-phone"/></svg> (215) 971-4523
-      </a>
+      <div class="header-phone-group">
+        <a class="header-phone" href="tel:+12159714523">
+          <svg class="icon"><use href="#i-phone"/></svg> (215) 971-4523
+        </a>
+        <a class="header-phone header-phone-secondary" href="tel:+18562886073">
+          <svg class="icon"><use href="#i-phone"/></svg> 856-288-6073
+        </a>
+      </div>
       <a class="btn btn-red" href="#contact">Get a Free Estimate</a>
       <button class="hamburger" id="hamburger-btn" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
         <svg class="icon"><use href="#i-menu"/></svg>
@@ -189,8 +195,9 @@
       <a class="btn btn-red btn-block" href="#contact">Get a Free Estimate</a>
       <a class="btn btn-outline-light btn-block" href="tel:+12159714523">Call Now</a>
     </div>
-    <div class="m-phone">
-      <svg class="icon"><use href="#i-phone"/></svg> (215) 971-4523
+    <div class="m-phone-group">
+      <div class="m-phone"><svg class="icon"><use href="#i-phone"/></svg> (215) 971-4523</div>
+      <a class="m-phone m-phone-secondary" href="tel:+18562886073"><svg class="icon"><use href="#i-phone"/></svg> 856-288-6073</a>
     </div>
   </nav>
 </header>
@@ -217,43 +224,7 @@
       </div>
 
       <div class="hero-art" aria-hidden="true">
-        <svg viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <clipPath id="houseClip"><path d="M60 190 200 70 340 190 340 380 60 380Z"/></clipPath>
-            <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stop-color="#d4af6a" stop-opacity="0"/>
-              <stop offset="0.5" stop-color="#d4af6a" stop-opacity=".9"/>
-              <stop offset="1" stop-color="#d4af6a" stop-opacity="0"/>
-            </linearGradient>
-          </defs>
-          <!-- blueprint dashed grid -->
-          <g stroke="#2a3d59" stroke-width="1" opacity=".6">
-            <path d="M20 60h360M20 120h360M20 240h360M20 300h360M20 360h360" stroke-dasharray="3 6"/>
-            <path d="M60 20v380M140 20v380M260 20v380M340 20v380" stroke-dasharray="3 6"/>
-          </g>
-          <!-- house outline -->
-          <path d="M60 190 200 70 340 190" fill="none" stroke="#e7ebef" stroke-width="3" stroke-linejoin="round"/>
-          <path d="M60 190V380H340V190" fill="none" stroke="#e7ebef" stroke-width="3"/>
-          <path d="M170 380V270H230V380" fill="none" stroke="#c62839" stroke-width="3"/>
-          <rect x="95" y="230" width="46" height="46" fill="none" stroke="#e7ebef" stroke-width="2.4"/>
-          <rect x="259" y="230" width="46" height="46" fill="none" stroke="#e7ebef" stroke-width="2.4"/>
-          <line x1="118" y1="230" x2="118" y2="276" stroke="#e7ebef" stroke-width="2"/>
-          <line x1="95" y1="253" x2="141" y2="253" stroke="#e7ebef" stroke-width="2"/>
-          <line x1="282" y1="230" x2="282" y2="276" stroke="#e7ebef" stroke-width="2"/>
-          <line x1="259" y1="253" x2="305" y2="253" stroke="#e7ebef" stroke-width="2"/>
-          <!-- dimension ticks -->
-          <g stroke="#d4af6a" stroke-width="1.4">
-            <line x1="60" y1="395" x2="340" y2="395"/>
-            <line x1="60" y1="390" x2="60" y2="400"/>
-            <line x1="340" y1="390" x2="340" y2="400"/>
-          </g>
-          <text x="200" y="412" text-anchor="middle" fill="#d4af6a" font-family="IBM Plex Mono, monospace" font-size="12">24' — 0"</text>
-          <!-- scanning beam clipped to house silhouette -->
-          <g clip-path="url(#houseClip)">
-            <rect class="scan-line" x="40" y="60" width="320" height="46" fill="url(#scanGrad)"/>
-          </g>
-          <circle cx="200" cy="70" r="4" fill="#c62839"/>
-        </svg>
+        <img class="hero-image" src="images/Prime%20restoration%20hero%20img.jpg" alt="Prime Restoration property restoration work" />
       </div>
     </div>
   </section>
